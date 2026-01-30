@@ -3,10 +3,10 @@ import Values from "values.js";
 import SingleColor from "./SingleColor";
 
 const Generator = () => {
-  const [color, setColor] = useState(new Values("cyan").all(10));
+  const [color, setColor] = useState("");
   const [error, setError] = useState(false);
   const [colorError, setColorError] = useState(false);
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(new Values("cyan").all(10));
   const handleColor = (e) => {
     e.preventDefault();
     if (!color) {
