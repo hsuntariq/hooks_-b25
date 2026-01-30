@@ -3,7 +3,7 @@ import Values from "values.js";
 import SingleColor from "./SingleColor";
 
 const Generator = () => {
-  const [color, setColor] = useState("");
+  const [color, setColor] = useState(new Values("cyan").all(10));
   const [error, setError] = useState(false);
   const [colorError, setColorError] = useState(false);
   const [list, setList] = useState([]);
